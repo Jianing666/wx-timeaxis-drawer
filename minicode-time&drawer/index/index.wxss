@@ -135,9 +135,9 @@
 }
 .rotateUp1 {
   transition: all .6s ease;
-  transform:rotate(90deg);
+  transform:rotate(270deg);
 }
 .rotateDown1 {
   transition: all .6s ease;
-  transform:rotate(270deg);
+  transform:rotate(90deg);
 }

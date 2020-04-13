@@ -1,0 +1,33 @@
+<view class="card">
+  <view class="cardTitle" bindtap="changeUpDown">我是标题
+    <!-- 项目里面用的是iconfont标签-箭头 -->
+    <text class="iconfont icon-down {{showUp?'rotateUp':'rotateDown'}}"></text>
+    <!-- 这里为了方便看，使用了< 小于号 -->
+    <view class="textBox {{showUp?'rotateUp1':'rotateDown1'}}">
+      <text>{{'<'}}</text>
+    </view>
+  </view>
+  <view class="ivestment-c {{showUp?'hideBox':'showBox'}}">
+    <view class="ivestment-i" wx:for="{{dataList}}" wx:key="index" wx:for-item="item" wx:for-index="index">
+      <view class="invest-l">
+        <view class="invest-b invest-line">
+          <text decode="{{true}}" space="{{true}}">&nbsp;</text>
+        </view>
+        <view class="demo-flex-1 font-28r color-3" style="line-height: 64rpx;">{{item.startTime}}</view>
+      </view>
+      <view class="invest-l">
+        <view class="invest-b invest-line2">
+          <text decode="{{true}}" space="{{true}}">&nbsp;</text>
+        </view>
+        <view class="demo-flex-1">
+          <view class="font-12 color-6 awardUnit" style="line-height: 52rpx;margin-top: 16rpx;margin-bottom: 16rpx;">{{item.experience}}
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+ 
+</view>
+<view class="card">
+ 我的存在就是为了测测上面收起的效果，嗯就是这样
+</view>
